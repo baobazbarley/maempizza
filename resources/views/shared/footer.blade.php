@@ -38,12 +38,12 @@
                 <a  href="#section-menu" class="scroll-to button-yellow button-heavy">PESAN SEKARANG</a>
             </div><!-- .col-md-4 -->
             <div class="col-md-4 responsive-column">
-                <h2 class="footer-heading text-uppercase">Tentang MaemPizza</h2>
+                <h2 class="footer-heading">Tentang MaemPizza</h2>
                 <p>
                     <a href="#">Profil MaemPizza</a>
                 </p>
 
-                <h2 class="footer-heading text-uppercase">Social Media</h2>
+                <h2 class="footer-heading">Social Media</h2>
                 <div class="footer-socials">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -75,3 +75,4 @@
 <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.nav.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
+@yield('script')

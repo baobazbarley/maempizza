@@ -25,7 +25,7 @@
                 <nav id="main-navigation">
                     <ul>
                         <li class="active">
-                            <a href="{{ url('/') }}">Home</a>
+                            <a id="home" href="{{ url('/') }}">Home</a>
                         </li>
                         <li>
                             <a href="{{ url('/menu') }}">Menu</a>

@@ -24,25 +24,28 @@
 
     <section>
         <div class="container">
-            <h3 class="text-center text-uppercase">Find our store near you</h3>
+            <h3 class="text-center text-uppercase">Peta Dapur Maem Pizza</h3>
             <div class="map-container">
                 <div id="map-canvas">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8">
-                    <h3 class="text-uppercase">Say Hello!</h3>
+                    <h3 class="text-uppercase">Kirimkan Saran dan Kritik Anda</h3>
                     <form id="form-contact" class="form-big" action="assets/php/send_email.php" method="post" data-email-not-set-msg="Email is required" data-message-not-set-msg="Message is required" data-name-not-set-msg="Name is required" data-ajax-fail-msg="Request could not be sent, try later" data-success-msg="Email successfully sent.">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <input type="text" name="name" placeholder="Your Name">
+                            <div class="col-sm-4">
+                                <input type="text" name="name" placeholder="Nama Anda*">
                             </div>
-                            <div class="col-sm-6">
-                                <input type="text" name="email" placeholder="Your Email">
+                            <div class="col-sm-4">
+                                <input type="text" name="email" placeholder="Email Anda*">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" name="phone" placeholder="Nomor Telp Anda*">
                             </div>
                         </div>
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="message" placeholder="Message"></textarea>
+                        <input type="text" name="subject" placeholder="Judul Pesan*">
+                        <textarea name="message" placeholder="Isi Pesan*"></textarea>
                         <div class="return-msg"></div>
                         <div class="text-right">
                             <input class="button-yellow button-text-low button-long button-low" type="submit" value="Submit">
@@ -54,18 +57,23 @@
                     <h3 class="text-uppercase">Information</h3>
                     <address class="address-big">
                         <p>
-                            Pizzeria Head Office<br>
-                            54866 2nd Road NY 48766<br>
-                            Ney York, U.S.A
+                            Dapur Maem Pizza<br>
+                            Jalan Sukaria No. 85<br>
+                            Yogyakarta
                         </p>
                         <p>
-                            Make Reservations: 0 800 111 555 666<br>
-                            Email: info@yourdomain.com
+                            Email: maempizza@gmail.com
                         </p>
                     </address>
                 </div>
             </div>
         </div><!-- .container -->
     </section>
+
+@endsection
+
+@section('script')
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 @endsection

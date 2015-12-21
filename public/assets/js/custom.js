@@ -324,13 +324,13 @@ $(document).ready(function(e) {
 		if(map_canvas.length == 0)
 			return;
 		var map;
-		var image = 'assets/images/map_marker.png';		// marker icon
-		var myLatlng = new google.maps.LatLng(40.714728,-73.998672);    //position of the map marker
-		var center = new google.maps.LatLng(40.714728,-74.050672);      //center of the map
+		var image = $('#home').attr('href')+'/assets/images/map_marker.png';		// marker icon
+		var myLatlng = new google.maps.LatLng(-7.7760329,110.4315616);    //position of the map marker
+		var center = new google.maps.LatLng(-7.7760329,110.4315616);      //center of the map
 		function mapInitialize() {
 			var mapOptions = {
 				scrollwheel: false,
-				zoom: 12,
+				zoom: 14,
 				center: center
 			};
 			map = new google.maps.Map(map_canvas.get(0), mapOptions);
